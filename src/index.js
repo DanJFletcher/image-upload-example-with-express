@@ -1,6 +1,10 @@
 const express = require('express');
 const multer = require('multer');
 
+/**
+ * This is optional configuration for multer. I did this because I just wanted to save the original filename
+ * instead of the default multer behaviour which is creating a random hash without a file extension.
+ */
 const storage = multer.diskStorage({
     destination (req, file, cb) {
         cb(null, 'storage/uploads/images');

@@ -1,7 +1,7 @@
 # File Upload Example With Express Using Multer
 
-This project exists to demonstrate how to upload an image to an express app. For simplicity it's configured to only
-support PNG files and has practically no validation.
+This project exists to demonstrate how to upload an image to an express app. For simplicity it just blindly
+writes the original filename without worrying about overwrites.
 
 Files will be stored in `storage/uploads/images`.
 
