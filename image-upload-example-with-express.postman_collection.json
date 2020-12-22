@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "16b2adca-673c-48dc-ba6f-fbcd63734491",
+		"name": "image-upload-example-with-express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "upload image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Dan/Downloads/rando-quoto (33).png"
+						},
+						{
+							"key": "thing",
+							"value": "'foo'",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
